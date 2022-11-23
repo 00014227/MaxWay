@@ -1,0 +1,116 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   }
+   body {
+    font-family: cursive;
+    background-color: #f6f6f6;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    color: black;
+   }
+   .nav-links a {
+    color: black;
+   }
+   /* LOGO */
+   .logo {
+    font-size: 32px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+   /* DROPDOWN MENU */
+
+
+   .MuiButton-root {
+    color: white;
+    padding: 10px 25px!important;
+    font-size: 16px;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: transform .2s ease-in-out;
+    font-family: Proxima-Nova;
+    font-weight: 500;
+    line-height: 19px;
+    border-radius: 8px;
+    letter-spacing: normal;
+    text-transform: none;
+    background-color: #51267D;
+   }
+ 
+ .sign{
+    color: white;
+ }
+
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:white;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    z-index: 88;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color: white;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+ 
+  
+   }   
+
+  
+
+  
