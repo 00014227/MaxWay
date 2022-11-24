@@ -1,0 +1,33 @@
+.main{
+    
+    max-width: 1200px;
+    background-color: #f6f6f6;
+    padding-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.box{
+    
+    background-color: white;
+    padding: 24px;
+    margin: 72px 0 96px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 7%);
+    border-radius: 12px;
+}
+
+.image{
+    border-radius: 12px;
+    width: 100%;
+}
+
+ .h3{
+    margin-top: 44px;
+ }
+
+
+ .annotation{
+    margin-top: 28px;
+ }
